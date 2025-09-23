@@ -1,0 +1,71 @@
+/* Overall background color */
+body.splash-screen {
+  background-color: #2c2c2c; /* Black background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Splash screen styling */
+.splash-screen {
+  text-align: center;
+  color: #F5DEB3; /* Light brown text color */
+}
+
+.logo-container {
+  background-color: #4b3832; /* Dark brown background */
+  padding: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.logo-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #D4AF37; /* Gold border around the logo */
+}
+
+/* Loading text styling */
+.loading-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #D4AF37; /* Gold color for loading text */
+  margin-top: 10px;
+}
+
+/* Loading bar styling */
+.loading-bar {
+  width: 60%;
+  height: 8px;
+  background-color: #4b3832; /* Dark brown background */
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 15px auto;
+  position: relative;
+}
+
+.loading-progress {
+  width: 0;
+  height: 100%;
+  background-color: #D4AF37; /* Gold color for progress bar */
+  animation: loadAnimation 2s infinite;
+  border-radius: 4px;
+}
+
+/* Loading animation */
+@keyframes loadAnimation {
+  0% {
+      width: 0;
+  }
+  50% {
+      width: 100%;
+  }
+  100% {
+      width: 0;
+  }
+}

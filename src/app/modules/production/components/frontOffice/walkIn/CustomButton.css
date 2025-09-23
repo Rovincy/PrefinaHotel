@@ -1,0 +1,23 @@
+.refresh-button {
+    background-color: #4caf50; /* A pleasant green */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  .refresh-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .refresh-button:focus {
+    outline: none;
+  }
+  

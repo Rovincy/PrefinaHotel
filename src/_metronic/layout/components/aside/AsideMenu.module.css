@@ -1,0 +1,41 @@
+/* Define your color variables here */
+:root {
+    --asideBackground: #f0f4f8; /* Background color for the menu */
+    --itemTextColor: #333; /* Text color for menu items */
+    --itemIconColor: #555; /* Icon color for menu items */
+    --hoverBackgroundColor: #e2e6ea; /* Background color on hover */
+    --activeBackgroundColor: #d1d7dd; /* Background color for active items */
+    --activeTextColor: #000; /* Text color for active items */
+  }
+  
+  .asideMenu {
+    background-color: var(--asideBackground);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 250px; /* Set the desired width of the menu */
+  }
+  
+  .asideMenuItem {
+    color: var(--itemTextColor);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .asideMenuItem:hover {
+    background-color: var(--hoverBackgroundColor);
+  }
+  
+  .asideMenuItem.active {
+    background-color: var(--activeBackgroundColor);
+    color: var(--activeTextColor);
+  }
+  
+  .asideMenuItem svg {
+    fill: var(--itemIconColor);
+    margin-right: 8px;
+  }
+  
