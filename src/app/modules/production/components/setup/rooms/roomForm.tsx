@@ -5,6 +5,7 @@ import { Button, Upload, message, Checkbox } from 'antd';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import type { UploadFile, UploadProps } from 'antd/es/upload/interface';
+import { BASE_URL } from '../../../urls';
 
 const RoomForm = () => {
   const [fileList, setFileList] = useState<UploadFile[]>([]);
@@ -14,7 +15,7 @@ const RoomForm = () => {
   const navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
 
-  const url = `https://localhost:5001/api/Rooms`;
+  const url = `${BASE_URL}/Rooms`;
 
   const onSubmit = async (values: any) => {
     if (fileList.length === 0) {

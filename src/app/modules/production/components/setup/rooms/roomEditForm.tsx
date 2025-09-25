@@ -5,6 +5,7 @@ import { UploadOutlined } from '@ant-design/icons';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import type { UploadFile, UploadProps } from 'antd/es/upload/interface';
+import { BASE_URL } from '../../../urls';
 
 const RoomEditForm = () => {
   const { register, reset, handleSubmit, formState: { errors } } = useForm();
@@ -26,14 +27,14 @@ const RoomEditForm = () => {
             uid: '-1',
             name: roomData.image.split('/').pop() || 'room-image',
             status: 'done',
-            url: `https://localhost:5001${roomData.image}`,
+            url: `${BASE_URL}${roomData.image}`,
           },
         ]);
       }
     }
   }, [roomData, reset]);
 
-  const url = `https://localhost:5001/api/Rooms`;
+  const url = `${BASE_URL}/Rooms`;
 
   const onSubmit = async (values: any) => {
     if (fileList.length === 0) {
