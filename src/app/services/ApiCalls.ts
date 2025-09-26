@@ -9,7 +9,7 @@ import axios from 'axios'
 
 // export const Api_Endpoint="http://192.168.202.123/apexsuitesapi/api"
 // export const Api_Endpoint = 'https://localhost:7240/api'
-export const Api_Endpoint = 'https://localhost/prefinaHotelApi/api'
+export const Api_Endpoint = 'http://localhost/prefinaHotelApi/api'
 // export const Api_Endpoint = 'http://localhost/apexsuitesapi/api'
 
 export const fetchRoomsTypes = () => {

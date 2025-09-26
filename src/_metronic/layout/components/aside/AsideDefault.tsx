@@ -39,7 +39,7 @@ const AsideDefault: FC = () => {
     >
       {/* begin::Brand */}
       <div className='aside-logo flex-column-auto' id='kt_aside_logo'>
-        {/* Button-like text for APEX SUITES */}
+        {/* Button-like text for Prefina Hotel */}
         <div
           className='btn text-white w-100 text-center mb-2 transition-colors'
           style={{
@@ -51,7 +51,7 @@ const AsideDefault: FC = () => {
           }}
         >
           <span className='hover:text-black transition-colors' style={{ color: 'inherit' }}>
-            ---- APEX SUITES ----
+            ---- Prefina Hotel ----
           </span>
         </div>
 
