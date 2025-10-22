@@ -1,16 +1,7 @@
 import axios from 'axios'
 
-// SIPCONSULT API_ENDPOINT
-//export const Api_Endpoint = 'https://app.sipconsult.net/frankiesHotelAPI/api';
-//export const Api_Endpoint="https://localhost:44335/api"
-// FRANKIES API_ENDPOINT
-//export const Api_Endpoint = 'http://3.74.54.13//frankiesHotelAPI/api'
-// export const Api_Endpoint = process.env.REACT_APP_API_URL
-
-// export const Api_Endpoint="http://192.168.202.123/apexsuitesapi/api"
 // export const Api_Endpoint = 'https://localhost:7240/api'
 export const Api_Endpoint = 'http://localhost/prefinaHotelApi/api'
-// export const Api_Endpoint = 'http://localhost/apexsuitesapi/api'
 
 export const fetchRoomsTypes = () => {
   return axios.get(`${Api_Endpoint}/roomsType`)

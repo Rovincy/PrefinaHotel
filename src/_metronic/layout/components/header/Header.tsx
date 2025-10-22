@@ -30,7 +30,7 @@ const Header: FC = () => {
         <Link to='/dashboard'>
           <img
             alt='Logo'
-            src={toAbsoluteUrl('/media/logos/ApexSuites.jpg')}
+            src={toAbsoluteUrl('/media/logos/logo.jpg')}
             className='h-60px w-60px'  // Increased size for better visibility
             style={{ maxWidth: '150px', objectFit: 'contain' }}  // Ensure it doesn't get too large
           />

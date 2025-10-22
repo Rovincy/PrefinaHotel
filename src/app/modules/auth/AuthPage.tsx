@@ -53,7 +53,7 @@ const AuthLayout = () => {
               width: '80px',
               height: '80px',
               borderRadius: '50%',
-              backgroundImage: `url(${toAbsoluteUrl('/media/logos/ApexSuites.jpg')})`,
+              backgroundImage: `url(${toAbsoluteUrl('/media/logos/logo.jpg')})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
@@ -79,7 +79,7 @@ const AuthLayout = () => {
               letterSpacing: '1px',
             }}
           >
-            Sign in to Apex Suite
+            Sign in to Prefina Hotel
           </h1>
           {/* end::Logo */}
 
