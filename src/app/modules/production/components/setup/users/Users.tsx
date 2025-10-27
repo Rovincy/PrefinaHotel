@@ -195,11 +195,11 @@ const Users = () => {
       width: 20,
       render: (_: any, record: any) => (
         <Space size='middle'>
-          {/* <Link to={`/users/userEditForm/`} state={record}>
-            <a href='#' className='btn btn-light-primary btn-sm'>
-              Edit
-            </a>
-          </Link> */}
+          <Link to={`/usersEditForm`} state={record}>
+            {/* <a href='#' className='btn btn-light-primary btn-sm'> */}
+            <span className='btn btn-light-primary btn-sm'>Edit</span>
+            {/* </a> */}
+          </Link> 
           <a
             href='#'
             className='btn btn-light-danger btn-sm'

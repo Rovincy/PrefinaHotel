@@ -83,7 +83,7 @@ import {Taxes} from '../modules/production/components/setup/taxes/tax'
 import {TaxesForm} from '../modules/production/components/setup/taxes/taxesForm'
 import {TaxEditForm} from '../modules/production/components/setup/taxes/taxEditForm'
 import {CurrencyEditForm} from '../modules/production/components/setup/Currency/currencyEditForm'
-import {UserEditForm} from '../modules/production/components/setup/users/userEditForm'
+// import {UserEditForm} from '../modules/production/components/setup/users/userEditForm'
 import {PaymentMethod} from '../modules/production/components/setup/PaymentMethod/paymentMethod'
 import {PaymentMethodForm} from '../modules/production/components/setup/PaymentMethod/paymentMethodForm'
 import {PaymentMethodEditForm} from '../modules/production/components/setup/PaymentMethod/paymentMethodEditForm'
@@ -122,6 +122,7 @@ import InHouseReport from '../modules/production/components/report/InHouseReport
 import CheckOutReport from '../modules/production/components/report/CheckOutReport'
 import RoomsExpectedAmountsReport from '../modules/production/components/report/RoomsExpectedAmountsReport'
 import GuestsPaymentsReport from '../modules/production/components/report/GuestsPaymentsReport'
+import { UserEditForm } from '../modules/production/components/setup/users/userEditForm'
 
 const accountBreadCrumbs: Array<PageLink> = [
   {
@@ -510,10 +511,9 @@ const PrivateRoutes = () => {
           }
         />
         <Route
-          path='/users/userEditForm/'
+          path='/usersEditForm'
           element={
             <SuspensedView>
-              <PageTitle breadcrumbs={accountBreadCrumbs}>Edit</PageTitle>
               <UserEditForm />
             </SuspensedView>
           }
